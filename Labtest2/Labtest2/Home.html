@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country info</title>
+    <link rel="stylesheet" href="Home.css">
+</head>
+
+<body>
+    <header>
+        <h1>Country info</h1>
+        <input type="text" id="search-input" placeholder="Search countries..." />
+    </header>
+
+    <main>
+        <section id="filter-sort">
+            <div id="filters">
+                <select id="region-filter">
+                    <option value="">Region</option>
+                </select>
+                <select id="subregion-filter">
+                    <option value="">Subregion</option>
+                </select>
+
+                <select id="population-filter">
+                    <option value="">Population</option>
+                    <option value="0-5">0-5 million</option>
+                    <option value="5-10">5-10 million</option>
+                </select>
+            </div>
+            <div id="sort">
+                <select id="sort-filter">
+                    <option value="">Sort by</option>
+                    <option value="population-asc">Population from Low to High</option>
+                    <option value="population-desc">Population from High to Low</option>
+                    <option value="name-asc">Name by A-Z</option>
+                    <option value="name-desc">Name by Z-A</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="country-list">
+            <div class="country-card">
+                <img src="flag_url" alt="Country flag" />
+                <h2>Country Name</h2>
+                <p>Population: </p>
+                <p>Region: </p>
+                <p>Subregion: </p>
+                <a href="detail.html?country=USA">More info</a>
+            </div>
+        </section>
+
+        <section id="pagination">
+            <a id="previous" href="#">&#x3C; Previous</a>
+            <span id="page-number">1</span>
+            <a id="next" href="#">Next &#x3E;</a>
+        </section>
+
+    </main>
+
+    <script src="Home.js"></script>
+</body>
+
+</html>
